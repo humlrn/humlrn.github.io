@@ -1,0 +1,21 @@
+Selected from Alberto Maria Metelli annotated BibTeX (acks = {FIS2}), conferences, journals and workshops only.
+2026 | conferences | migali2026worstcase | Worst-Case Regret Bounds for Combinatorial Bandits with Ranking Feedback
+2026 | conferences | lazzati2026why | Why Does Action Chunking Improve Behavioral Cloning Performance in Robotic Control?
+2026 | workshops | migali2026combinatorial | Combinatorial Bandits with Plackett-Luce Feedback: A Worst-Case Analysis
+2026 | workshops | alovisetti2026varianceaware | Variance-Aware Optimal Ranking in Log-Concave Random Utility Models
+2026 | conferences | corso2026fast | Fast Mixing Steady-State Control in Markov Decision Processes
+2026 | conferences | migali2026learning | Learning to Rank from Incomplete Rankings
+2026 | workshops | drago2026modeling | Modeling Incomparability: A New Rationality Paradigm for Preference-Based Reinforcement Learning
+2026 | conferences | drago2026online | Online Compatible Reward Identification from Preference Feedback
+2026 | conferences | montenegro2026reusinga | Reusing Trajectories in Policy Gradients Enables Fast Convergence
+2026 | workshops | migali2026robust | Robust Learning to Rank from Incomplete Rankings under Positional Censoring
+2026 | workshops | fiandri2026addressinga | Addressing Stochastic Rising Bandits with Thompson Sampling
+2026 | conferences | genalti2026catonistyle | Catoni-Style Change Point Detection for Regret Minimization in Piecewise-Stationary Heavy-Tailed Bandits
+2026 | workshops | lazzati2026closeda | Closed-Form Reward Centroids for Inverse Reinforcement Learning
+2026 | conferences | lazzati2026generalizing | Generalizing Behavior via Inverse Reinforcement Learning with Closed-Form Reward Centroids
+2026 | conferences | fiandri2026thompson | Thompson Sampling-like Algorithms for Stochastic Rising Bandits
+2026 | conferences | lazzati2026imitation | Imitation Learning as Return Distribution Matching
+2026 | workshops | lazzati2026reformulatinga | Reformulating Imitation Learning as Return Distribution Matching
+2026 | conferences | lazzati2026robustness | Robustness in the Face of Partial Identifiability in Reward Learning
+2026 | workshops | lazzati2026robustnessa | Robustness in the Face of Partial Identifiability in Reward Learning Problems
+2026 | journals | fiandri2026rising | Rising Rested Bandits: Lower Bounds and Efficient Algorithms

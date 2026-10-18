@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 255" role="img" aria-label="HUmLrn - Unified Learning from Diverse Human Feedback" version="1.1" id="svg11">
+  <title id="title1">HUmLrn - Unified Learning from Diverse Human Feedback</title>
+  <defs id="defs4">
+    <linearGradient id="gradNavy" x1="0" y1="0" x2="0.65" y2="1">
+      <stop offset="0" stop-color="#0B2D5B" id="stop1" />
+      <stop offset="1" stop-color="#092651" id="stop2" />
+    </linearGradient>
+    <linearGradient id="gradBlue" x1="0" y1="0" x2="0.82" y2="1">
+      <stop offset="0" stop-color="#5099CF" id="stop3" />
+      <stop offset="1" stop-color="#3B82C4" id="stop4" />
+    </linearGradient>
+  <linearGradient id="gradConnection" gradientUnits="userSpaceOnUse" x1="19" y1="184" x2="212" y2="150" spreadMethod="pad"><stop offset="0%" stop-color="#0B2D5B" /><stop offset="55%" stop-color="#3B82C4" /><stop offset="100%" stop-color="#8BC7EE" /></linearGradient></defs>
+  <g id="humlrn-symbol" aria-label="Monogram H: AI agent, human and unified learning">
+    <rect id="agent" x="18" y="14" width="59" height="228" rx="19" fill="url(#gradNavy)" />
+    <g id="computational-network" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="5.2" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M37 59 L62 91 L39 126 L56 162" fill="none" id="path4" />
+      <circle cx="37" cy="59" r="10.4" stroke="none" id="circle4" />
+      <circle cx="62" cy="91" r="11.2" stroke="none" id="circle5" />
+      <circle cx="39" cy="126" r="11.6" stroke="none" id="circle6" />
+      <circle cx="56" cy="162" r="9.0" stroke="none" id="circle7" />
+    </g>
+    <g id="human">
+      <circle cx="184" cy="41" r="26.5" fill="url(#gradBlue)" id="circle8" />
+      <rect x="156" y="82" width="56" height="160" rx="18" fill="url(#gradBlue)" id="rect8" />
+    </g>
+    <g id="unified-learning-curve" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <path d="M19 190 C60 196 92 137 132 131 C172 119 189 144 212 157" stroke="#FFFFFF" stroke-width="21" id="path8" />
+      <path d="M19 184 C60 190 92 131 132 124 C172 112 189 138 212 150" stroke="url(#gradConnection)" stroke-width="17" id="path9" />
+    </g>
+  </g>
+  </svg>

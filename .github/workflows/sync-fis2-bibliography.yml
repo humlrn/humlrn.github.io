@@ -1,0 +1,75 @@
+name: Synchronize FIS2 publications
+
+on:
+  schedule:
+    # Every Monday, 05:15 UTC. GitHub scheduled runs are not guaranteed to start on the minute.
+    - cron: '15 5 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: fis2-publication-sync
+  cancel-in-progress: false
+
+jobs:
+  synchronize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Check out HUmLrn website
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: scripts/requirements-sync.txt
+
+      - name: Install sync dependencies
+        run: python -m pip install -r scripts/requirements-sync.txt
+
+      - name: Validate import logic against supplied annotated source snapshot
+        run: python -m unittest discover -s tests -p 'test_*.py' -v
+
+      - name: Synchronize annotated remote BibTeX into the site
+        env:
+          FIS2_BIBTEX_BASE_URL: ${{ vars.FIS2_BIBTEX_BASE_URL }}
+          FIS2_SOURCE_TOKEN: ${{ secrets.FIS2_SOURCE_TOKEN }}
+        run: python scripts/sync_fis2.py
+
+      - name: Confirm generated site is consistent
+        run: python -m unittest discover -s tests -p 'test_*.py' -v
+
+      - name: Create or update review pull request
+        id: pr
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          add-paths: |
+            index.html
+            bibliography/humlrn-fis2.bib
+            bibliography/FIS2-selection.txt
+            bibliography/entries/*.bib
+            bibliography/sync-report.json
+            bibliography/sync-report.md
+            exports/humlrn-static-preview/index.html
+            exports/humlrn-static-preview/bibliography/entries/*.bib
+          commit-message: 'chore(bibliography): synchronize FIS2 publications'
+          branch: automation/fis2-publications
+          delete-branch: true
+          title: 'Bibliography: synchronize FIS2 publications'
+          body-path: bibliography/sync-report.md
+
+      - name: Report outcome
+        env:
+          PR_URL: ${{ steps.pr.outputs.pull-request-url }}
+        run: |
+          if [ -n "$PR_URL" ]; then
+            echo "Pull request ready for review: $PR_URL" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Bibliography already synchronized: no pull request required." >> "$GITHUB_STEP_SUMMARY"
+          fi

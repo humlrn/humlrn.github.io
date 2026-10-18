@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 685 255" role="img" aria-label="HUmLrn - Unified Learning from Diverse Human Feedback" version="1.1" id="svg11">
+  <title id="title1">HUmLrn - Unified Learning from Diverse Human Feedback</title>
+  <defs id="defs4">
+    <linearGradient id="gradNavy" x1="0" y1="0" x2="0.65" y2="1">
+      <stop offset="0" stop-color="#0B2D5B" id="stop1" />
+      <stop offset="1" stop-color="#092651" id="stop2" />
+    </linearGradient>
+    <linearGradient id="gradBlue" x1="0" y1="0" x2="0.82" y2="1">
+      <stop offset="0" stop-color="#5099CF" id="stop3" />
+      <stop offset="1" stop-color="#3B82C4" id="stop4" />
+    </linearGradient>
+  <linearGradient id="gradConnection" gradientUnits="userSpaceOnUse" x1="19" y1="184" x2="212" y2="150" spreadMethod="pad"><stop offset="0%" stop-color="#0B2D5B" /><stop offset="55%" stop-color="#3B82C4" /><stop offset="100%" stop-color="#8BC7EE" /></linearGradient></defs>
+  <g id="humlrn-symbol" aria-label="Monogram H: AI agent, human and unified learning">
+    <rect id="agent" x="18" y="14" width="59" height="228" rx="19" fill="url(#gradNavy)" />
+    <g id="computational-network" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="5.2" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M37 59 L62 91 L39 126 L56 162" fill="none" id="path4" />
+      <circle cx="37" cy="59" r="10.4" stroke="none" id="circle4" />
+      <circle cx="62" cy="91" r="11.2" stroke="none" id="circle5" />
+      <circle cx="39" cy="126" r="11.6" stroke="none" id="circle6" />
+      <circle cx="56" cy="162" r="9.0" stroke="none" id="circle7" />
+    </g>
+    <g id="human">
+      <circle cx="184" cy="41" r="26.5" fill="url(#gradBlue)" id="circle8" />
+      <rect x="156" y="82" width="56" height="160" rx="18" fill="url(#gradBlue)" id="rect8" />
+    </g>
+    <g id="unified-learning-curve" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <path d="M19 190 C60 196 92 137 132 131 C172 119 189 144 212 157" stroke="#FFFFFF" stroke-width="21" id="path8" />
+      <path d="M19 184 C60 190 92 131 132 124 C172 112 189 138 212 150" stroke="url(#gradConnection)" stroke-width="17" id="path9" />
+    </g>
+  </g>
+  <g id="wordmark" font-family="Inter Display, Inter, Arial, sans-serif" font-weight="800" font-size="110" letter-spacing="-2.6">
+    <g id="text9" style="fill:#0b2d5b" aria-label="HUmLrn">
+      <path d="m 266.15625,148 h 19.33594 v -32.49512 h 30.4541 V 148 h 19.33594 V 67.970703 h -19.33594 v 31.098633 h -30.4541 V 67.970703 h -19.33594 z m 110.46152,1.28906 c 20.35645,0 33.67676,-11.76269 33.67676,-29.43359 V 67.970703 h -18.85254 v 50.327147 c 0,8.48633 -5.9082,14.55567 -14.82422,14.55567 -8.8623,0 -14.87792,-6.12305 -14.87792,-14.55567 V 67.970703 h -18.85254 v 51.884767 c 0,17.6709 13.2666,29.43359 33.73046,29.43359 z M 417.89961,148 h 18.47656 v -33.03223 c 0,-6.28418 3.70606,-9.93652 8.75489,-9.93652 4.99511,0 8.3789,3.54492 8.3789,9.07715 V 148 h 17.6709 v -33.4082 c 0,-5.74707 3.33008,-9.56055 8.59375,-9.56055 4.99512,0 8.54004,3.27637 8.54004,9.29199 V 148 h 18.53027 v -37.75879 c 0,-12.622069 -8.00292,-20.195312 -19.1748,-20.195312 -8.11035,0 -15.30762,4.028321 -18.20801,11.440432 -2.30957,-7.412111 -8.8623,-11.440432 -16.43554,-11.440432 -7.3584,0 -14.07227,3.759766 -17.34864,11.870122 V 91.28125 h -17.77832 z" id="path11" />
+      <path style="fill:#3b82c4" d="m 514.50371,148 h 54.78515 V 131.56445 H 533.83965 V 67.970703 h -19.33594 z m 59.59727,0 h 18.47657 v -29.05762 c 0,-8.05664 4.56542,-12.67578 11.17187,-12.67578 2.68555,0 5.96191,0.10742 7.30469,0.16113 V 91.173828 c -1.50391,-0.05371 -3.06153,-0.107422 -5.04883,-0.107422 -7.57324,0 -11.81641,3.007813 -13.85742,10.205074 h -0.16114 v -9.99023 h -17.88574 z m 60.40293,-30.83008 c 0,-7.73437 3.75976,-11.33301 9.61425,-11.33301 5.8545,0 9.23829,3.65235 9.23829,10.36622 V 148 h 18.47656 v -35.66406 c 0,-13.964846 -7.19727,-22.290042 -19.49707,-22.290042 -8.54004,0 -14.28711,3.920899 -18.04688,10.419922 V 91.28125 H 616.02734 V 148 h 18.47657 z" id="path12" />
+    </g>
+  </g>
+  </svg>
